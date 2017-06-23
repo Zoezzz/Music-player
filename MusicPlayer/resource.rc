@@ -1,0 +1,238 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 356, 244
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+MENU IDR_MENU
+FONT 12, "华文楷体"
+BEGIN
+    LISTBOX         IDC_LIST,13,70,134,164,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "播放",IDC_PLAYPAUSE,79,37,19,11
+    PUSHBUTTON      "下一首",IDC_BUTTONNEXT,130,37,24,11
+    PUSHBUTTON      "上一首",IDC_BUTTONPRE,48,37,26,11
+    GROUPBOX        "播放列表",IDC_STATIC,7,61,346,180,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "停止",IDC_BUTTONSTOP,104,37,20,11
+    PUSHBUTTON      "添加",IDC_BUTTONADD,156,71,34,15
+    CTEXT           "00:00:00",IDC_TOTALTIME,136,24,44,8
+    CTEXT           "00:00:00",IDC_PLAYTIME,24,24,37,8
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,18,12,165,12
+    EDITTEXT        IDC_EDITPLAYING,29,2,206,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "播放模式",IDC_PLAYMODE,156,210,34,15
+    CTEXT           "单曲循环",IDC_STATICPLAYMODE,155,196,36,10,SS_SUNKEN
+    CONTROL         "Slider1",IDC_SOUND_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,87,54,54,7
+    CONTROL         "静音",IDC_CHECKSOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,53,26,8
+    PUSHBUTTON      "显示歌词",IDC_SHOW,156,95,35,15
+    EDITTEXT        IDC_EDIT1,206,71,131,163,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP,4,33,40,20
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP,237,3,62,58
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,153,120,38,60
+END
+
+IDD_SONGINFO DIALOGEX 0, 0, 178, 88
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 12, "华文楷体"
+BEGIN
+    GROUPBOX        "歌曲信息",IDC_STATIC,5,2,166,82,0,WS_EX_CLIENTEDGE
+    LTEXT           " 歌曲名:",IDC_STATIC,10,15,28,10
+    LTEXT           " 演唱者:",IDC_STATIC,10,29,29,10
+    LTEXT           "  专  辑 :",IDC_STATIC,8,42,29,10
+    LTEXT           "发行年代:",IDC_STATIC,12,55,35,9
+    LTEXT           "其他信息:",IDC_STATIC,11,68,35,9
+    EDITTEXT        IDC_EDITSONGNAME,40,15,119,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDITARTIST,40,29,122,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDITALBUM,40,43,122,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDITYEAR,46,56,116,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDITOTHERINFO,45,68,115,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_SONGINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "控制(&C)"
+    BEGIN
+        MENUITEM "播放/暂停(&P)",               IDC_PLAYPAUSE
+        MENUITEM "  停 止(&S)",                 IDC_BUTTONSTOP
+        MENUITEM "上一曲(&e)",                  IDC_BUTTONPRE
+        MENUITEM "下一曲(&N)",                  IDC_BUTTONNEXT
+        MENUITEM " 退出(&E)",                   IDC_EXIT
+    END
+    POPUP "设置（&S）"
+    BEGIN
+        MENUITEM "关闭时最小到托盘(&T)",        IDC_SETSYSEXIT
+    END
+    MENUITEM "By 张琪 220152703",           65535
+END
+
+IDR_LISTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "列表右键菜单"
+    BEGIN
+        MENUITEM "移出列表",                    IDC_BUTTONREMOVE
+        MENUITEM "添加歌曲",                    IDC_BUTTONADDFILE
+        MENUITEM "添加目录",                    IDC_ADDDIR
+        MENUITEM "清空列表",                    IDC_BUTTONREMOVEALL
+        MENUITEM "查看信息",                    IDM_VIEWINFO
+        MENUITEM "打开所在目录",                IDM_OPENLOCATION
+    END
+END
+
+IDR_PLAYMODEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "播放模式"
+    BEGIN
+        MENUITEM "单曲一次",                    IDM_PLAYONCE
+        MENUITEM "单曲重复",                    IDM_PLAYREPART
+        MENUITEM "随机播放",                    IDM_PLAYRANDOM
+        MENUITEM "全部一次",                    IDM_PLAYONCEALL
+        MENUITEM "全部循环",                    IDM_PLAYREPATEALL
+    END
+END
+
+IDR_TRAYMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "托盘右键菜单"
+    BEGIN
+        MENUITEM "播放/暂停",                   IDC_PLAYPAUSE
+        MENUITEM "   停止",                     IDC_BUTTONSTOP
+        MENUITEM " 上一曲",                     IDC_BUTTONPRE
+        MENUITEM " 下一曲",                     IDC_BUTTONNEXT
+        MENUITEM "  退出",                      IDC_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "Music.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP3             BITMAP  DISCARDABLE     "new2.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "new.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "new3.bmp"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

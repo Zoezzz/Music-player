@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MusicPlayerV3 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1.HF4\AppData\Local\Temp\RSPEECE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MusicPlayerV3.pdb" /debug /machine:I386 /out:"Debug/MusicPlayerV3.exe" /pdbtype:sept 
+".\Debug\AddMusic.obj"
+".\Debug\MainDlg.obj"
+".\Debug\Music.obj"
+".\Debug\MusicPlayerV3.obj"
+".\Debug\SongInfoDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Tray.obj"
+".\Debug\resource.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1.HF4\AppData\Local\Temp\RSPEECE.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+MusicPlayerV3.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
